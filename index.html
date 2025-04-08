@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Connex Property</title>
-	<link rel="icon" type="image/x-icon" href="images/logo-1.png">
+	<link rel="icon" type="image/x-icon" href="images/logo-2.png">
 	<link href="css/bootstrap.min.css" rel="stylesheet">  
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,77 +20,178 @@
   
 	<link href="css/style.css" rel="stylesheet">    
 	<link rel="stylesheet" href="css/lightslider.css" /> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css"/>  
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
 
 </head>
 <body>    
 	<header> 
-		<nav class="navbar navbar-light navbar-expand-xl bg-faded justify-content-center">
-			<a href="index.html" class="navbar-brand d-flex w-25 mr-auto">
-				<img src="images/logo-1.png" alt="">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
-			<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
-				<form>
-					<input type="text" name="" id="" class="form-control" placeholder="Search">
-					<button class="btn"><i class="far fa-search"></i></button>
-				</form>
-				<ul class="navbar-nav w-100 justify-content-center"> 
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Properties </a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</li> 
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Contact </a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</li> 
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Sell </a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</li> 
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Rent </a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</li> 
-					<li class="nav-item">
-						<a class="nav-link" href="#">Buy</a>
-					</li>
-				</ul>
-				<ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-					<li class="nav-item">
-						<a class="nav-link btn-tha" href="#">THA - ฿</a>
-					</li>
-					<li class="">
-						<a class="nav-link" href="#"><img src="images/TH.png" alt=""></a>
-					</li> 
-					<li class="">
-						<a class="nav-link" href="#"><img src="images/GB.png" alt=""></a>
-					</li> 
-				</ul>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<!-- Logo (left-aligned) -->
+				<a class="navbar-brand" href="#">
+					<img src="images/logo-2.png" alt="logo">
+				</a>
+				<!-- Toggler for mobile -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+					aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Menu (right-aligned) -->
+				<div class="collapse navbar-collapse" id="navbarMenu">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#">หน้าหลัก </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">ซื้อ </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">เช่า </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">ฝากขาย/เช่า </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">บทความ</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#">ติดต่อเรา</a>
+						</li>
+						<!-- Language Dropdown -->
+						<li class="nav-item dropdown language-nav">
+							<a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								<img src="images/TH.png" alt="logo">
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="languageDropdown">
+								<li><a class="dropdown-item" href="#"><img src="images/TH.png" alt="language"></a></li>
+								<li><a class="dropdown-item" href="#"><img src="images/GB.png" alt="language"></a></li> 
+							</ul>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	</header>
-	<main> 
-		 
+	<main>  
+		<section>
+			<div class="map-nav">
+				<div class="container"> 
+					หน้าหลัก / ติดต่อเรา
+				</div>
+			</div>
+		</section>
+		<section class="sec1">
+			<div class="container position-relative">
+				<div class="menut">
+					<ul>
+						<li>
+							<a href="#">แบบฟอร์ม </a>
+						</li>
+						<li>
+							<a href="#">เหตุผลที่ต้องเลือก</a>
+						</li>
+						<li>
+							<a href="#">วิดีโอแนะนำ</a>
+						</li>
+						<li>
+							<a href="#">แนวทางการทำงาน</a>
+						</li>
+						<li>
+							<a href="#">ขั้นตอนการสมัคร</a>
+						</li>
+						<li>
+							<a href="#">ผลงานของเรา</a>
+						</li>
+						<li>
+							<a href="#">คำถามที่พบบ่อย</a>
+						</li>
+					</ul>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 p-0">
+						
+					</div>
+					<div class="col-lg-6 p-0">
+						<form action="">
+							<div class="form-con">
+								<div class="row mb-3">
+									<div class="col-12">
+										<label for="id01" class="form-label">ชื่อ-สกุล</label> 
+										<input type="text" class="form-control" id="id01">  
+									</div>
+								</div>
+								<div class="row mb-3">
+									<div class="col-12">
+										<label for="id02" class="form-label">เบอร์โทรติดต่อ</label> 
+										<input type="text" class="form-control" id="id02">  
+									</div>
+								</div>
+								<div class="row mb-3">
+									<div class="col-12">
+										<label for="id03" class="form-label">ที่อยู่ปัจจุบัน</label> 
+										<input type="text" class="form-control" id="id03">  
+									</div>
+								</div>
+								<div class="row mb-3">
+									<div class="col-12 position-relative">
+										<label for="id04" class="form-label">วันที่พร้อมเริ่มงาน</label> 
+										<input type="text" class="form-control date" id="id04"> 
+										<img src="images/calendar.png" alt="">
+									</div>
+								</div>
+								<div class="row mb-3">
+									<div class="col-12">
+										<label for="id05" class="form-label">รายได้ที่คาดหวังต่อเดือน</label> 
+										<input type="text" class="form-control" id="id05">  
+									</div>
+								</div>
+								<div class="row mb-3">
+									<div class="col-12">
+										<label for="id06" class="form-label">พื้นที่ทำงาน</label> 
+										<input type="text" class="form-control" id="id06">  
+									</div>
+								</div>
+								<div class="row mb-3">
+									<div class="col-12">
+										<label for="id06" class="form-label">คุณให้คะแนนทักษะภาษาอังกฤษของตัวเองเท่าไร</label> 
+										<select class="form-select" id="validationCustom01">
+											<option selected disabled value="">Choose...</option>
+											<option>...</option>
+											<option>...</option>
+											<option>...</option>
+										</select>
+									</div>
+								</div>
+								<div class="row mb-3">
+									<div class="col-12">
+										<label for="id06" class="form-label">คุณมีรถยนต์ส่วนตัวหรือไม่</label> 
+										<select class="form-select" id="validationCustom01">
+											<option selected disabled value="">Choose...</option>
+											<option>...</option>
+											<option>...</option>
+											<option>...</option>
+										</select>  
+									</div>
+								</div>
+								<div class="row mb-3">
+									<div class="col-12">
+										<label for="id06" class="form-label">แนบ CV/Resume</label> 
+										<input type="text" class="form-control" id="id06">  
+									</div>
+								</div>
+								<div class="row mb-3">
+									<div class="col-12 text-center">
+										<button class="btn">สมัครงาน</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 	<footer>
 		<div class="container">
@@ -101,9 +202,22 @@
 	<script src="js/jquery.min.js"></script> 
 	<script src="js/popper.min.js" ></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/lightslider.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/bootstrap-datepicker.th.min.js"></script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 	<script>
+		
+		$('.date').datepicker({ 
+			language: 'th',
+			format: 'dd-mm-yyyy',
+			clearBtn: false, 
+			calendarWeeks: false,
+			autoclose: true,
+			todayHighlight: true,
+			thaiyear: true, 
+			toggleActive: true
+		}); 
+
 		AOS.init({
 		  duration: 1000, // Animation duration in milliseconds
 		  once: false  // Only animate once

@@ -1,8 +1,8 @@
 :root {
-  --main1: #545454;  
-  --main2: #b0937b;  
-  --main3: #2B88D9;  
-  --main4: #940000;  
+  --main1: #1f4d8e;  
+  --main2: #5681bf;  
+  --main3: #ffb300;  
+  --main4: #ffce59;  
   --text-gray: #535862;
   --text-gray2: #A4A7AE;
   --text-black: #181D27;
@@ -53,14 +53,158 @@ a:hover{
   text-decoration: none;
 } 
 body{
-  font-family: SukhumvitSet-Text;
+  font-family: 'SukhumvitSet-Text', sans-serif;
   font-style: normal; 
   overflow-x: hidden !important;
-}      
+}   
+nav .navbar-nav .nav-item{
+  margin-left: 2px;
+  margin-right: 2px;
+} 
+nav .navbar-nav .nav-item .nav-link{ 
+  width: 105px;
+  text-align: center;
+  transition: .33s all ease-out;   
+  white-space: nowrap;
+  font-size: 18px;
+  font-family: SukhumvitSet-Bold;
+  padding-bottom: 6px;
+}
+nav .navbar-nav .nav-item.active .nav-link{
+  background-color: var(--main2); 
+  border-radius: 100px;
+  color: #fff;
+}
+nav .navbar-nav .nav-item:hover .nav-link{
+  background-color: var(--main2); 
+  border-radius: 100px;
+  color: #fff;
+}
+
+.nav-item.language-nav{ 
+  width: 40px;
+}
+.nav-item.language-nav:hover .nav-link{  
+  background-color: transparent !important; 
+}
+.nav-item .dropdown-toggle{
+  color: black !important;
+}
+.nav-item.language-nav .dropdown-menu{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 0px;
+  border: none;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+.nav-item.language-nav .dropdown-menu img{
+  display: block;
+  margin: auto;
+}
+.nav-item.language-nav .dropdown-menu.show{
+  width: 70px;
+  min-width: 70px;
+}
+.nav-item.language-nav .dropdown-menu li{
+  width: 70px;
+  min-width: 70px;
+}  
+.nav-item.language-nav .dropdown-menu li:hover a{ 
+  background: var(--main2);
+}  
+.nav-item.language-nav .dropdown-menu[data-bs-popper] { 
+  left: 8px; 
+} 
+.map-nav{
+  height: 56px;  
+  background: var(--main1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 15px 100px;
+  font-size: 16px;
+  line-height: 25px;  
+  font-family: SukhumvitSet-Bold;
+  color: #FFFFFF;
+  border-radius: 0px;
+}
+.map-nav span{ 
+  color: #FFB800;
+}
+
+
+.sec1{ 
+  background-image: url(../images/bg-sec1.jpg);
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% auto; 
+} 
+.sec1 .menut{ 
+  background-color: rgba(255, 255, 255, 0.8); 
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: auto;
+  top: 0;
+  width: 100%;
+  padding: 20px 30px 20px 30px;
+}
+.sec1 .menut ul{
+  list-style: none;
+  padding-left: 0px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+.sec1 .menut ul li{ 
+  transition: .33s all ease-out;   
+}
+.sec1 .menut ul li a{
+  font-family: 'SukhumvitSet-SemiBold', sans-serif;
+  color: #121212;
+  font-size: 20px;
+  transition: .33s all ease-out;   
+}
+.sec1 .menut ul li:hover a{ 
+  text-decoration: underline !important;
+}
+.form-con{
+  background-color: rgba(255, 255, 255, 0.75); 
+  padding: 40px;
+  margin-top: 90px;
+  margin-bottom: 40px;
+} 
+.form-con .date + img{
+  position: absolute;
+  right: 16px;
+  top: 36px;
+  height: 30px;
+} 
+.form-con .form-label{
+  font-family: SukhumvitSet-SemiBold;
+} 
+.form-con .form-control{
+  font-family: SukhumvitSet-SemiBold;
+  height: 45px;
+  font-size: 18px;
+} 
+.form-con .form-select{
+  font-family: SukhumvitSet-SemiBold;
+  height: 45px;
+  font-size: 18px;
+} 
+.form-con .btn{
+  background-color: var(--main4); 
+  border-radius: 100px;
+  font-family: SukhumvitSet-Bold;
+  font-size: 20px;
+  min-width: 250px;
+}
+
 
 
 /* 
-transition: .33s all ease-out;   
+  transition: .33s all ease-out;   5
+  font-family: SukhumvitSet-SemiBold;
 ######################################################################################################
 ###################################################################################################### 
 */ 

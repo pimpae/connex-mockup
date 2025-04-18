@@ -129,7 +129,6 @@ nav .navbar-nav .nav-item:hover .nav-link{
 .map-nav span{ 
   color: #FFB800;
 }
-
 .bbold {
   text-shadow: -.5px -.5px 0 var(--main1), .5px -.5px 0 var(--main1), -.5px .5px 0 var(--main1), .5px .5px 0 var(--main1);
 }
@@ -183,6 +182,7 @@ nav .navbar-nav .nav-item:hover .nav-link{
 } 
 .form-con .form-label{
   font-family: SukhumvitSet-SemiBold;
+  font-size: 18px;
 } 
 .form-con .form-control{
   font-family: SukhumvitSet-SemiBold;
@@ -645,6 +645,40 @@ footer .bot-menu span{
   line-height: 22px; 
   color: #fff;    
 }
+.bgh div{
+  position: absolute; 
+  padding-left: 40px;
+  top: 35%; 
+}
+.bgh div h1{  
+  font-size: 60px;
+  line-height: 85px;
+  color: #1c1d1d;  
+  font-family: SukhumvitSet-Bold;
+  text-shadow: -.5px -.5px 0 #1c1d1d, .5px -.5px 0 #1c1d1d, -.5px .5px 0 #1c1d1d, .5px .5px 0 #1c1d1d;
+  margin-bottom: 20px;
+}
+.bgh div h1 i{   
+  line-height: 85px;  
+  font-size: 50px;
+  font-style: normal;
+  color: var(--text-gray);
+  text-shadow: -.5px -.5px 0 var(--text-gray), .5px -.5px 0 var(--text-gray), -.5px .5px 0 var(--text-gray), .5px .5px 0 var(--text-gray); 
+}
+.bgh div h1 strong{   
+  line-height: 30px;  
+  font-size: 70px;
+  font-style: normal;
+  color: #374958;
+  text-shadow: -.5px -.5px 0 #374958, .5px -.5px 0 #374958, -.5px .5px 0 #374958, .5px .5px 0 #374958; 
+}
+.bgh div h1 span{   
+  line-height: 30px;  
+  font-size: 48px;
+  font-style: normal;
+  color: #000;
+  text-shadow: -.5px -.5px 0 #000, .5px -.5px 0 #000, -.5px .5px 0 #000, .5px .5px 0 #000; 
+}
 
 
 /* 
@@ -817,11 +851,49 @@ footer .bot-menu span{
     margin: auto;
     width: unset !important;
   }
+  .sec1 .bgh{ 
+    background-image: url(../images/bg1s.png); 
+    position: relative;
+    background-position: center !important; 
+    background-size: auto 250px;  
+    height: 100%;
+    width: 100%;
+  } 
+  .bgh div{
+    position: relative; 
+    padding-left: 20px;
+    top: 15%; 
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .bgh div h1{  
+    font-size: 30px;
+    line-height: 45px; 
+    margin-bottom: 20px;
+  }
+  .bgh div h1 i{   
+    line-height: 35px;  
+    font-size: 35px; 
+  }
+  .bgh div h1 strong{   
+    line-height: 20px;  
+    font-size: 30px; 
+  }
+  .bgh div h1 span{   
+    line-height: 20px;  
+    font-size: 22px; 
+  }
+  .form-con .date + img { 
+    top: 42px; 
+  }
 }
 @media only screen and (min-width: 1025px) { /* PC */
   .pc-x{
     display: none !important;
-  }      
+  }     
+  .form-addjob{
+    margin-right: -25px;
+  } 
 }     
  
  

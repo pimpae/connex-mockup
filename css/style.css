@@ -137,6 +137,7 @@ nav .navbar-nav .nav-item:hover .nav-link{
   background-position: top center !important;
   background-repeat: no-repeat !important;
   background-size: 100% auto; 
+  min-height: 100vh;
 } 
 .sec1 .menut{ 
   background-color: rgba(255, 255, 255, 0.8); 
@@ -147,6 +148,7 @@ nav .navbar-nav .nav-item:hover .nav-link{
   margin: auto;
   top: 0;
   width: 100%;
+  z-index: 111;
   padding: 20px 30px 20px 30px;
 }
 .sec1 .menut ul{
@@ -172,17 +174,22 @@ nav .navbar-nav .nav-item:hover .nav-link{
   background-color: rgba(255, 255, 255, 0.75); 
   padding: 40px;
   margin-top: 90px;
+  position: relative;
+  z-index: 22;
   margin-bottom: 40px;
 } 
-.form-con .date + img{
+.form-con .date + .label-img{
   position: absolute;
-  right: 16px;
-  top: 36px;
+  right: 16px; 
+  top: 40px;
+} 
+.form-con .date + .label-img img{ 
   height: 30px;
 } 
 .form-con .form-label{
   font-family: SukhumvitSet-SemiBold;
   font-size: 18px;
+  color: #000;
 } 
 .form-con .form-control{
   font-family: SukhumvitSet-SemiBold;
@@ -219,8 +226,9 @@ nav .navbar-nav .nav-item:hover .nav-link{
 }
 
 .sec2{
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  min-height: 100vh;
 }
 .sec2 h2{ 
   font-size: 42px;
@@ -230,6 +238,7 @@ nav .navbar-nav .nav-item:hover .nav-link{
   text-align: center;
   color: var(--text-gray);
   text-shadow: -.5px -.5px 0 var(--text-gray), .5px -.5px 0 var(--text-gray), -.5px .5px 0 var(--text-gray), .5px .5px 0 var(--text-gray);
+  margin-bottom: 30px;
 }
 .sec2 h2 strong { 
   color: var(--main3);
@@ -252,26 +261,30 @@ nav .navbar-nav .nav-item:hover .nav-link{
   font-family: SukhumvitSet-Bold; 
   color: #000;
   text-align: center;
-  margin-bottom: 15px
+  margin-bottom: 15px;
+}
+.sec2 .reason-item{ 
+  margin-bottom: 55px;
 }
 .sec2 .reason-item p{
   font-size: 24px;
   color: #000;
   text-align: center;
   font-family: SukhumvitSet-Medium;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 .sec2 .reason-item p span{
   font-family: SukhumvitSet-Bold; 
   color: var(--main3); 
 }
 .sec3{  
+  min-height: 100vh;
   background-image: url(../images/bg-sec3.jpg);
   background-position: top center !important;
   background-repeat: no-repeat !important;
   background-size: 100% auto;  
-  padding-top: 190px;
-  padding-bottom: 190px;
+  padding-top: 150px;
+  padding-bottom: 50px;
 }  
 .sec3 h2{ 
   font-size: 64px;
@@ -281,7 +294,7 @@ nav .navbar-nav .nav-item:hover .nav-link{
   text-align: center;
   color: #fff; 
   box-shadow: 0px 10px 10px var(--sds-size-depth-100) rgba(0, 0, 0, 0.83); 
-  line-height: 150%;
+  line-height: 130%;
 }
 .sec3 h2 i{ 
   color: var(--main3); 
@@ -293,6 +306,7 @@ nav .navbar-nav .nav-item:hover .nav-link{
   color: #fff; 
   font-size: 50px;
   text-shadow: -.5px -.5px 0 #fff, .5px -.5px 0 #fff, -.5px .5px 0 #fff, .5px .5px 0 #fff;
+  line-height: 100%;
 }
 .sec3 .vix{
   position: absolute;
@@ -304,6 +318,9 @@ nav .navbar-nav .nav-item:hover .nav-link{
   width: 80%;
   display: block;
   margin: auto;  
+}
+.w-90 {
+  width: 90% !important;
 }
 .sec3 .vix:after{
   content: "";
@@ -337,20 +354,31 @@ nav .navbar-nav .nav-item:hover .nav-link{
   font-size: 30px;
 }
 .sec4{
-  background-color: #374958;
-  padding-top: 40px;
+  min-height: 100vh;
+  background-color: #374958; 
+  padding-top: 60px;
   padding-bottom: 60px;
 }
+.sec4 .container{ 
+  min-height: 100vh; 
+}
+.sec4 .container > .row{ 
+  min-height: 100vh; 
+}
 .sec4 h2{ 
-  font-size: 64px; 
+  font-size: 42px; 
   font-family: SukhumvitSet-Bold;
   font-weight: bold;
   text-align: center;
   color: #fff; 
   box-shadow: 0px 10px 10px var(--sds-size-depth-100) rgba(0, 0, 0, 0.83); 
 }
+.sec4 h2 img{ 
+  width: 250px;
+  margin-top: -30px;
+}
 .sec4 hr{ 
-  border-top: 4px solid #fff;
+  border-top: 3px solid #fff;
   opacity: 1;
 }
 .sec4 h6{ 
@@ -391,8 +419,15 @@ nav .navbar-nav .nav-item:hover .nav-link{
   color: var(--main3);
 } 
 .sec5{ 
+  min-height: 100vh;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.sec5 .container{ 
+  min-height: 100vh; 
+}
+.sec5 .container > .row{ 
+  min-height: 100vh; 
 }
 .sec5 h2{ 
   font-size: 42px;
@@ -402,15 +437,15 @@ nav .navbar-nav .nav-item:hover .nav-link{
   text-align: center; 
   box-shadow: 0px 10px 10px var(--sds-size-depth-100) rgba(0, 0, 0, 0.83); 
   text-shadow: -.5px -.5px 0 var(--text-gray), .5px -.5px 0 var(--text-gray), -.5px .5px 0 var(--text-gray), .5px .5px 0 var(--text-gray);
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 .sec5 h2 span{ 
-  font-size: 48px;
+  font-size: 50px;
   color: var(--text-gray2); 
   text-shadow: -.5px -.5px 0 var(--text-gray2), .5px -.5px 0 var(--text-gray2), -.5px .5px 0 var(--text-gray2), .5px .5px 0 var(--text-gray2);
 }
 .sec5 .item5 img{ 
-  height: 170px;
+  height: 200px;
   width: auto;
   margin: auto;
   display: block;
@@ -419,7 +454,7 @@ nav .navbar-nav .nav-item:hover .nav-link{
 .sec5 .item5{ 
   position: relative;
 } 
-.sec5 .row > div:last-child .item5::after{
+.sec5 .rowx > div:last-child .item5::after{
   content: none;  
 }
 .sec5 .item5::after{
@@ -436,16 +471,17 @@ nav .navbar-nav .nav-item:hover .nav-link{
   margin: auto;
   background-color: var(--text-gray2);
 }
-.sec5 .row > div:nth-child(1) i{
+.sec5 .rowx > div:nth-child(1) i{
   position: absolute;
   color: var(--text-gray2);
   font-size: 70px;
-  top: 40px;
-} .row > div:nth-child(3) i{
+  top: 55px;
+}
+.sec5 .rowx > div:nth-child(3) i{
   position: absolute;
   color: var(--text-gray2);
   font-size: 70px;
-  top: 40px;
+  top: 55px;
   right: 0;
 }
 .sec5 h6 {
@@ -475,16 +511,22 @@ nav .navbar-nav .nav-item:hover .nav-link{
   margin: auto; 
 } 
 .sec6{ 
-  min-height: 90vh;
+  min-height: 100vh;
   background-image: url(../images/bg-sec6.png);
   background-position: top center !important;
   background-repeat: no-repeat !important;
-  background-size: 100% auto; 
-  padding-top: 60px;
-  padding-bottom: 120px;
+  background-size: 100% auto;  
   position: relative;
   overflow: hidden;
+  padding-top: 60px;
+  padding-bottom: 60px;
 } 
+.sec6 .container{ 
+  min-height: 100vh; 
+}
+.sec6 .container > .row{ 
+  min-height: 100vh; 
+}
 .sec6 svg{
   position: absolute;
   bottom: -120px;
@@ -514,12 +556,16 @@ nav .navbar-nav .nav-item:hover .nav-link{
   text-shadow: -.5px -.5px 0 var(--main3), .5px -.5px 0 var(--main3), -.5px .5px 0 var(--main3), .5px .5px 0 var(--main3);
 }
 .sec7{ 
-  min-height: 90vh; 
-  background-color: var(--text-gray2);
-  padding-top: 60px;
-  padding-bottom: 60px; 
+  min-height: 100vh;
+  background-color: var(--text-gray2); 
 } 
-.sec7 .container > h2{
+.sec7 .container{ 
+  min-height: 100vh; 
+}
+.sec7 .container > .row{ 
+  min-height: 100vh; 
+}
+.sec7 .container .h2{
   font-size: 42px;
   color: #fff;
   font-family: SukhumvitSet-Bold;
@@ -529,7 +575,7 @@ nav .navbar-nav .nav-item:hover .nav-link{
   text-shadow: -.5px -.5px 0 var(--text-gray), .5px -.5px 0 var(--text-gray), -.5px .5px 0 var(--text-gray), .5px .5px 0 var(--text-gray); 
   margin-bottom: 40px;
 }
-.sec7 .container > h2 span{
+.sec7 .container .h2 span{
   font-size: 42px;
   color: var(--main3); 
   text-shadow: -.5px -.5px 0 var(--main3), .5px -.5px 0 var(--main3), -.5px .5px 0 var(--main3), .5px .5px 0 var(--main3);
@@ -588,6 +634,7 @@ nav .navbar-nav .nav-item:hover .nav-link{
 
 
 footer{ 
+  min-height: 100vh;
   background: #222222;
   padding: 45px 70px 30px;
 }
@@ -885,7 +932,7 @@ footer .bot-menu span{
   }
   .form-con .date + img { 
     top: 42px; 
-  }
+  } 
 }
 @media only screen and (min-width: 1025px) { /* PC */
   .pc-x{
